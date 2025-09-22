@@ -1,0 +1,65 @@
+@import './assets/fonts/fonts.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');*/
+
+:root {
+  /* Color principal de cada familia */
+  --purple: 268 100% 53%;
+  --orange: 31 100% 50%;
+  --pink: 331 100% 50%;
+  --cyan: 175 100% 42%;
+  --yellow: 49 100% 50%;
+}
+
+body {
+  font-family: 'Lufga', sans-serif;
+  @apply bg-white text-gray-900;
+}
+
+.gradient-bg-1 {
+  background: linear-gradient(135deg, #e91e63 0%, #9c27b0 100%);
+}
+
+.gradient-bg-2 {
+  background: linear-gradient(135deg, #ff9800 0%, #f44336 100%);
+}
+
+.gradient-bg-3 {
+  background: linear-gradient(135deg, #2196f3 0%, #00bcd4 100%);
+}
+
+.gradient-bg-4 {
+  background: linear-gradient(135deg, #4caf50 0%, #8bc34a 100%);
+}
+
+.gradient-bg-5 {
+  background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);
+}
+
+.gradient-bg-6 {
+  background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%);
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.bg-pattern {
+  background-color: #ffffff;
+  opacity: 0.1;
+  background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #ffffff 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0,10px 10px;
+}
